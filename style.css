@@ -1,0 +1,92 @@
+#landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#landing-page h1 {
+  font-size: 4rem;
+  margin: 0 0 2rem 0;
+}
+
+#landing-page p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#landing-page a {
+  padding: 1rem 2rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+}
+
+#projets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#projets ul li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.projet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: font-size 0.2s ease-in-out;
+}
+
+/* Modifier le style de la liste */
+.ma-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajouter une animation à chaque élément de la liste */
+.animation-liste {
+  transition: all 0.3s ease-out;
+}
+
+/* Modifier le style des éléments au survol */
+.element-liste:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Modifier le style du span ajouté en JS */
+.element-liste span {
+  font-size: 0.8em;
+  color: grey;
+}
